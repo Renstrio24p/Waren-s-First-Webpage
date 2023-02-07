@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My First WEBPAGE</title>
+    <style>
+      /* 
+        THIS IS A MULTI-LINE CSS COMMENT
+        https://colorhunt.co/palette/0081c95bc0f886e5ffffc93c
+        PRIMARY: #0081C9
+        #073146
+        #FFBD14
+        SECONDARY: #5BC0F8
+        Accent 1: #86E5FF
+        Accent 2: #FFC93C
+        
+        */
+
+      .header {
+        /* background-color: #0081C9; */
+        height: 80vh; /*vh means viewport height*/
+      }
+      
+      .header__nav--links {
+        text-decoration: none;
+        color: #86E5FF;
+      } 
+    </style>
+  </head>
+
+  <body
+    style="
+      background-color: #073146;
+      color: #ffbd14;
+      padding: 0 15% 0;
+      text-align: left;
+    "
+  >
+    <!--*************************************************HERO / HEADER SECTION**************************************************-->
+    <header>
+      <div class="header">
+        <!--NAVIGATION-->
+        <div class="logo">
+          <img
+            src="https://github.com/KodeGo-Bootcamp/HTML-Activity-Images/blob/main/Coder2023.png?raw=true"
+            width="60"
+            style="border-radius: 50%"
+            alt="logo"
+          />
+        </div>
+        <div class="navigation" style="height:50px;width:80%;position:fixed; ">
+
+         
+          <ul style="list-style-type: none;">
+            <li style="float: left; padding-left: 5%">
+              <a class="header__nav--links" href="#">Home</a>
+            </li>
+            <li style="float: left; margin-left: 15%">
+              <a class="header__nav--links" href="#about">About</a>
+            </li>
+            <li style="float: left; margin-left: 15%">
+              <a class="header__nav--links" href="#skills">Skills</a>
+            </li>
+            <li style="float: left; margin-left: 15%">
+              <a class="header__nav--links" href="#blog">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <br />
+        <!-- <hr style="border-top: 5px dotted red;"> -->
+        <h1>
+          Hi! THIS IS <em>MY FIRST WEB PAGE</em>,
+          <span style="color: #FFC93C;">I AM ROD!</span>
+        </h1>
+        <p style="text-shadow: 0px -5px black">
+          Let me help you build your <strong>visual stories</strong>.
+        </p>
+        <figure>
+          <img
+            src="https://github.com/KodeGo-Bootcamp/HTML-Activity-Images/blob/main/pexels-royal-anwar-450213.jpg?raw=true"
+            alt="this is a picture of myself"
+            width="200"
+            height="200"
+            style="border-radius: 50%"
+          >
+          <figcaption>Freelance Web Developer</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <!--*************************************************MAIN SECTION **************************************************-->
+
+    <main>
+      <!-- <h1>HEADING 1</h1>
+      <h2>HEADING 2</h2>
+      <h3>HEADING 3</h3>
+      <h4>HEADING 4</h4>
+      <h5>HEADING 5</h5>
+      <h6>HEADING 6</h6> -->
+      <!--*************************************************ABOUT SECTION **************************************************-->
+      <hr >
+      <section>
+
+        <div id="about" style="height:50vh;">
+          <h2>ABOUT ME</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+            doloremque laudantium in sit asperiores. Aspernatur, repudiandae
+            dolore. Eveniet molestias eius ex voluptas? Exercitationem vero aut
+            pariatur sapiente numquam cumque itaque.
+          </p>
+          <p>My hobbies are the following:</p>
+          <ul>
+            <li>Swimming</li>
+            <li>Watching Netflix</li>
+            <li>Reading</li>
+            <li>Playing Video Games</li>
+          </ul>
+        </div>
+      </section>
+
+      <!--*************************************************SKILLS SECTION **************************************************-->
+      <hr >
+      <section>
+        <div id="skills" style="height:100vh; background-image:url(https://source.unsplash.com/1600x900/?dogs); background-size:cover; "> 
+          <div class="box" style="background-color: rgba(49, 41, 41, 0.651); width: 50%; margin: 0 auto; text-align:center;">
+            <h2>SKILLS</h2>
+            <ol type="none">
+              <li>Guitar Player</li>
+              <li>Coder</li>
+              <li>Gamer</li>
+              <li>Drummer</li>
+              <li>Composer</li>
+              <li>Game Developer</li>
+              <li>Web developer</li>
+            </ol>
+          </div>
+          
+        </div>
+        
+      </section>
+
+      <!--*************************************************BLOG POST SECTION **************************************************-->
+      <hr >
+      <section>
+        <div class="blog">
+          <h2>Blog Posts</h2>
+          <a style="text-decoration:none;color:#ffbd14;" href="#">What I love about the early morning?</a> <br>
+          <a style="text-decoration:none;color:#ffbd14;" href="#">Why I love coding?</a><br>
+          <a style="text-decoration:none;color:#ffbd14;" href="#">Coffe is my bestfriend during the morning</a><br>
+          <a style="text-decoration:none;color:#ffbd14;" href="#">My goals for the 2023 Bootcamp.</a><br>
+          <a style="text-decoration:none;color:#ffbd14;" href="#">Why learnign HTML is important for beginners?</a><br>
+          <a style="text-decoration:none;color:#ffbd14;" href="#">What I love about CSS?</a><br>
+          <a style="text-decoration:none;color:#ffbd14;" href="https://www.gammadyne.com/ethics.htm">What is the programmers code of ethics?</a><br>
+          <a style="text-decoration:none;color:#ffbd14;" href="#">Why practice the Pomodoro technique?</a><br>
+         
+        </div>
+        
+
+      </section>
+    </main>
+    <!--*************************************************FORM SECTION **************************************************-->
+    <hr>
+    <section>
+      <div class="form" style="height: 20vh;"> 
+        <h2>FORM</h2>
+        <form action="#" method="#">
+          <label for="input-name">Full Name:</label>
+          <input type="text" name="full_name" id="input-name" placeholder="Enter your full name here">
+          <label for="email">Email:</label>
+          <input type="email" placeholder="Enter your email here">
+          <input type="submit" value="SEND">
+
+        </form>
+
+      </div>
+     
+    </section>
+    
+    <!--*************************************************FOOTER SECTION **************************************************-->
+    <hr width="50%;" align="left">
+    <footer>
+      <p>  &copy; Copyright 2023 </p>
+    </footer>
+  </body>
+</html>
+
+<!--     
+    <div class="img">
+        <h2>Inserting image</h2>
+        <figure>
+          <img
+            src="#"
+            alt="this is a picture of myself"
+            width="200"
+            height="200"
+            style="border-radius: 50%"
+          >
+          <figcaption>Freelance Web Developer</figcaption>
+        </figure>
+    </div> -->
+
+<!-- DO NOT DO THIS 
+        <footer>
+        <header>
+            <header></header>
+        </header>
+    </footer> -->
